@@ -1,4 +1,4 @@
-# JSBI — pure-JavaScript BigInts [![Build status](https://github.com/GoogleChromeLabs/jsbi/actions/workflows/main.yml/badge.svg)](https://github.com/GoogleChromeLabs/jsbi/actions/workflows/main.yml) [![jsbi on npm](https://img.shields.io/npm/v/jsbi)](https://www.npmjs.com/package/jsbi)
+# JSBI — pure-JavaScript BigInts [![Build and test](https://github.com/mumup/jsbi/actions/workflows/main.yml/badge.svg)](https://github.com/mumup/jsbi/actions/workflows/main.yml) [![jsbi on npm](https://img.shields.io/npm/v/@666666/jsbi)](https://www.npmjs.com/package/@666666/jsbi)
 
 JSBI is a pure-JavaScript implementation of [the ECMAScript BigInt proposal](https://tc39.es/proposal-bigint/), which officially became a part of the JavaScript language in ES2020.
 
