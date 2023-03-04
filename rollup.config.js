@@ -11,9 +11,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import babel from 'rollup-plugin-babel';
-import pkg from './package.json';
+import {babel} from '@rollup/plugin-babel';
 import minify from 'rollup-plugin-babel-minify';
+import {readFileSync} from 'fs';
+
+const pkg = JSON.parse(
+    readFileSync(new URL('./package.json', import.meta.url), 'utf8'),
+);
 
 // Keep JSBI bundle seperated and consistent after TS migration.
 // See issue #79.
@@ -47,7 +51,9 @@ export default [
   {
     input: input,
     plugins: [
-      babel(),
+      babel({
+        babelHelpers: 'bundled',
+      }),
       minify({
         comments: false,
       }),
